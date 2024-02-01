@@ -6,13 +6,9 @@ public class Tree {
 
     }
     float Entropy(float[] labels){
-        int count0 , count1 , count2 ;
+        int count0 = 0,count1 = 0,count2 = 0;
         float entropy = 0.0F;
-        for (int i = 1; i <= labels.length; i++) {
-            float p = 1.0F * labels[i] / labels.length;
-            if (labels[i] > 0)
-                entropy -= p * Math.log(p) / Math.log(2);
-        }
+
         return entropy;
     }
     float iGain(int pEntropy , float[] weight , float[] entropies){

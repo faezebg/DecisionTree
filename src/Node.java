@@ -1,6 +1,5 @@
-import java.util.ArrayList;
-
 public class Node {
-    ArrayList<Integer> arrayList = new ArrayList<>();
+    int[] data = new int[17];
+
 
 }
