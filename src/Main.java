@@ -85,7 +85,7 @@ public class Main {
                     khCount[8] = count8;
                     break;
             }
-
+//نانانان
         }
         for (int j = 0; j < 9; j++){
             if (khCount[j] != 0) {

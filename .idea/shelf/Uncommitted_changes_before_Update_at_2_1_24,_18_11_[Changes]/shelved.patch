@@ -1,0 +1,79 @@
+Index: src/Node.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>public class Node {\n\n}\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/Node.java b/src/Node.java
+--- a/src/Node.java	(revision 846ba33e98dce7eb99dc8486938ed9ca5a6c2de0)
++++ b/src/Node.java	(date 1706796395178)
+@@ -1,3 +1,5 @@
++import java.util.ArrayList;
++
+ public class Node {
+-
++    ArrayList<Integer> data = new ArrayList<>();
+ }
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"7dfda069-8c85-4805-accd-94fe4bb529c9\" name=\"Changes\" comment=\"inputs\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"MarkdownSettingsMigration\">\n    <option name=\"stateVersion\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"2bktoMqGJuaKVqd6AUh25dRxleU\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\"><![CDATA[{\n  \"keyToString\": {\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\n    \"WebServerToolWindowFactoryState\": \"false\",\n    \"last_opened_file_path\": \"C:/Users/AVA/OneDrive/Desktop/DecisionTree/src\",\n    \"nodejs_package_manager_path\": \"npm\",\n    \"project.structure.last.edited\": \"Modules\",\n    \"project.structure.proportion\": \"0.0\",\n    \"project.structure.side.proportion\": \"0.0\"\n  }\n}]]></component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"C:\\Users\\AVA\\OneDrive\\Desktop\\DecisionTree\\src\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"7dfda069-8c85-4805-accd-94fe4bb529c9\" name=\"Changes\" comment=\"\" />\n      <created>1706771083156</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1706771083156</updated>\n      <workItem from=\"1706771084794\" duration=\"18147000\" />\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"inputs\">\n      <created>1706793304487</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1706793304487</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"2\" />\n    <servers />\n  </component>\n  <component name=\"TypeScriptGeneratedFilesManager\">\n    <option name=\"version\" value=\"3\" />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"inputs\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"inputs\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 846ba33e98dce7eb99dc8486938ed9ca5a6c2de0)
++++ b/.idea/workspace.xml	(date 1706798463404)
+@@ -1,7 +1,10 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+   <component name="ChangeListManager">
+-    <list default="true" id="7dfda069-8c85-4805-accd-94fe4bb529c9" name="Changes" comment="inputs" />
++    <list default="true" id="7dfda069-8c85-4805-accd-94fe4bb529c9" name="Changes" comment="inputs">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -20,8 +23,13 @@
+   <component name="MarkdownSettingsMigration">
+     <option name="stateVersion" value="1" />
+   </component>
++  <component name="ProjectColorInfo">{
++  &quot;associatedIndex&quot;: 3
++}</component>
+   <component name="ProjectId" id="2bktoMqGJuaKVqd6AUh25dRxleU" />
+-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
++    <OptionsSetting value="false" id="Update" />
++  </component>
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -31,11 +39,15 @@
+     "RunOnceActivity.OpenProjectViewOnStart": "true",
+     "RunOnceActivity.ShowReadmeOnStart": "true",
+     "WebServerToolWindowFactoryState": "false",
++    "kotlin-language-version-configured": "true",
+     "last_opened_file_path": "C:/Users/AVA/OneDrive/Desktop/DecisionTree/src",
++    "node.js.detected.package.tslint": "true",
++    "node.js.selected.package.tslint": "(autodetect)",
+     "nodejs_package_manager_path": "npm",
+     "project.structure.last.edited": "Modules",
+     "project.structure.proportion": "0.0",
+-    "project.structure.side.proportion": "0.0"
++    "project.structure.side.proportion": "0.0",
++    "vue.rearranger.settings.migration": "true"
+   }
+ }]]></component>
+   <component name="RecentsManager">
+@@ -52,6 +64,7 @@
+       <option name="presentableId" value="Default" />
+       <updated>1706771083156</updated>
+       <workItem from="1706771084794" duration="18147000" />
++      <workItem from="1706796298781" duration="897000" />
+     </task>
+     <task id="LOCAL-00001" summary="inputs">
+       <created>1706793304487</created>
