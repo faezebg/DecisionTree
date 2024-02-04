@@ -4,6 +4,7 @@ public class Node {
     private String header;
     private Node[] childernNodes;
     private int count = 0;
+    private int count2 = 0;
 
     Node() {
 
@@ -72,6 +73,10 @@ public class Node {
         return label;
     }
 
+    public int getLabelCount() {
+        return count2;
+    }
+
     public void setChildernNodes(Node[] childernNodes) {
         this.childernNodes = childernNodes;
     }
@@ -124,6 +129,7 @@ public class Node {
 
     public void setLabel(int[] label) {
         this.label = label;
+        count2 = 8878;
     }
 
     void addData(int[] newData) {
@@ -131,5 +137,49 @@ public class Node {
             data[count][i] = newData[i];
         }
         count++;
+    }
+
+    void addLabel(int newLabel) {
+        label[count2] = newLabel;
+        count2++;
+    }
+
+    int getLabel0() {
+        int counter = 0;
+        for (int i = 0; i < count2; i++) {
+            if (label[i] == 0) {
+                counter++;
+            }
+        }
+        return counter;
+    }
+
+    int getLabel1() {
+        int counter = 0;
+        for (int i = 0; i < count2; i++) {
+            if (label[i] == 1) {
+                counter++;
+            }
+        }
+        return counter;
+    }
+
+    int getLabel2() {
+        int counter = 0;
+        for (int i = 0; i < count2; i++) {
+            if (label[i] == 2) {
+                counter++;
+            }
+        }
+        return counter;
+    }
+
+    boolean isCompelete() {
+        if ((getLabel0() != 0 && getLabel1() == 0 && getLabel2() == 0)
+                || (getLabel0() == 0 && getLabel1() != 0 && getLabel2() == 0)
+                || (getLabel0() == 0 && getLabel1() == 0 && getLabel2() != 0)) {
+            return true;
+        }
+        return false;
     }
 }
